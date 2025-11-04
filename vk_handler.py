@@ -11,7 +11,7 @@ class VKBot:
     def __init__(self):
         logger.info("Initializing VK Bot...")
         self.vk_session = vk_api.VkApi(token=Config.VK_GROUP_TOKEN)
-        self.longpoll = VkBotLongPoll(self.vk_session, Config.GROUP_ID)
+        self.longpoll = VkBotLongPoll(self.vk_session, Config.VK_GROUP_ID)
         self.vk = self.vk_session.get_api()
         self.deepseek = DeepSeekClient()
         self.user_sessions = {}
