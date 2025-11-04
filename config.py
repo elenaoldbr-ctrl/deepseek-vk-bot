@@ -6,7 +6,7 @@ load_dotenv()
 class Config:
     # Для Render используем os.getenv() напрямую
     DEEPSEEK_API_KEY = os.getenv('DEEPSEEK_API_KEY')
-    VK_GROUP_TOKEN = os.getenv('VK_GROUP_TOKEN')  # ← ИСПРАВЬТЕ НАЗВАНИЕ!
+    VK_GROUP_TOKEN = os.getenv('VK_GROUP_TOKEN')
     VK_GROUP_ID = os.getenv('VK_GROUP_ID')
     API_VERSION = '5.131'
     
